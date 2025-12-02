@@ -1,70 +1,69 @@
 # Noise Meter Pro
 
-A professional-grade, web-based Noise Meter application featuring real-time audio analysis, visualizers, and recording capabilities.
+リアルタイムの音声分析、ビジュアライザー、録音機能を備えたプロ仕様のWebベース騒音計アプリケーションです。
 
-![App Screenshot](https://via.placeholder.com/800x450?text=Noise+Meter+Pro+Screenshot) 
-*(Note: Replace with actual screenshot URL after uploading)*
+![アプリのスクリーンショット](./screenshot.png)
 
-## Features
+## 特徴
 
-- **Real-time Decibel Meter**: Accurate dB(A) monitoring with digital and analog displays.
-- **Professional Analog Gauge**: Custom-drawn canvas gauge with color-coded zones and precise needle movement.
-- **Visualizers**:
-  - **Real-time Waveform**: Oscilloscope-style visualization of the audio input.
-  - **History Graph**: Rolling 60-second history of noise levels.
-- **Audio Recording**:
-  - Record audio directly from the browser.
-  - **Smart Save**: Uses the File System Access API to allow saving to a specific folder with a custom filename.
-  - **Auto-Extension**: Automatically detects supported audio formats (webm, mp4, ogg).
-- **Interval Statistics**: Displays the average noise level over a user-adjustable interval (0.1s - 5.0s).
-- **Internationalization (i18n)**: Fully supported English and Japanese interfaces.
-- **Theme Support**: Toggle between Dark Mode (default) and Light Mode.
-- **Responsive Design**: Fully optimized for desktop and mobile devices (including iPhone X layout).
+- **リアルタイムデシベルメーター**: デジタルおよびアナログ表示による正確なdB(A)モニタリング。
+- **プロフェッショナルアナログゲージ**: 色分けされたゾーンと精密な針の動きを備えたカスタム描画のキャンバスゲージ。
+- **ビジュアライザー**:
+  - **リアルタイム波形**: 音声入力のオシロスコープ風ビジュアライゼーション。
+  - **履歴グラフ**: 過去60秒間の騒音レベルの推移を表示。
+- **音声録音**:
+  - ブラウザから直接音声を録音。
+  - **スマート保存**: File System Access APIを使用し、特定のフォルダにカスタムファイル名で保存可能。
+  - **自動拡張子**: サポートされている音声形式（webm, mp4, ogg）を自動検出。
+- **区間平均表示**: ユーザーが設定した更新間隔（0.1秒〜5.0秒）ごとの平均騒音レベルを表示し、変動する騒音を安定して把握可能。
+- **多言語対応 (i18n)**: 英語と日本語のインターフェースに完全対応。
+- **テーマ対応**: ダークモード（デフォルト）とライトモードの切り替えが可能。
+- **レスポンシブデザイン**: デスクトップおよびモバイルデバイス（iPhone Xレイアウトを含む）に最適化。
 
-## Tech Stack
+## 技術スタック
 
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
-- **Build Tool**: Vite
-- **APIs**: 
+- **フロントエンド**: HTML5, CSS3, Vanilla JavaScript (ES6+)
+- **ビルドツール**: Vite
+- **API**: 
   - Web Audio API (AudioContext, AnalyserNode)
   - Canvas API (Visualizations)
   - MediaStream Recording API (Audio Recording)
   - File System Access API (Saving files)
 
-## Getting Started
+## 始め方
 
-### Prerequisites
+### 前提条件
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+- Node.js (v14以上)
+- npm (v6以上)
 
-### Installation
+### インストール
 
-1. Clone the repository:
+1. リポジトリをクローンします:
    ```bash
-   git clone https://github.com/yourusername/noise-meter-pro.git
-   cd noise-meter-pro
+   git clone https://github.com/arata0914/noise-meter.git
+   cd noise-meter
    ```
 
-2. Install dependencies:
+2. 依存関係をインストールします:
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. 開発サーバーを起動します:
    ```bash
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:5173`.
+4. ブラウザで `http://localhost:5173` を開きます。
 
-## Usage
+## 使い方
 
-1. **Start Monitoring**: Click the "Start" button to enable microphone access and begin monitoring.
-2. **Record Audio**: Click "Record" to start capturing audio. Click "Stop Rec" to finish and save the file.
-3. **Adjust Settings**: Use the slider to change the update interval for the digital display and statistics.
-4. **Switch Theme/Language**: Use the toggle buttons in the header to customize your experience.
+1. **モニタリング開始**: 「開始」ボタンをクリックしてマイクへのアクセスを許可し、モニタリングを開始します。
+2. **音声録音**: 「録音」をクリックして録音を開始します。「録音停止」をクリックして終了し、ファイルを保存します。
+3. **設定調整**: スライダーを使用して、デジタル表示と統計の更新間隔を調整します。
+4. **テーマ/言語の切り替え**: ヘッダーのトグルボタンを使用して、表示をカスタマイズします。
 
-## License
+## ライセンス
 
-This project is licensed under the MIT License.
+このプロジェクトは MIT ライセンスの下で公開されています。
