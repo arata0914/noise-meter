@@ -56,18 +56,18 @@ stopBtn.addEventListener('click', () => {
   uiController.setStatus('status_paused');
 });
 
-recordBtn.addEventListener('click', () => {
-  if (!audioManager.isInitialized) {
-    alert('Please start the meter first.');
-    return;
-  }
+// recordBtn.addEventListener('click', () => {
+//   if (!audioManager.isInitialized) {
+//     alert('Please start the meter first.');
+//     return;
+//   }
 
-  if (!isRecording) {
-    startRecording();
-  } else {
-    stopRecording();
-  }
-});
+//   if (!isRecording) {
+//     startRecording();
+//   } else {
+//     stopRecording();
+//   }
+// });
 
 function startRecording() {
   isRecording = true;
